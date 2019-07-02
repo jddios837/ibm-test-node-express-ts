@@ -5,8 +5,10 @@
   "description": "api project test",
   "main": "index.js",
   "scripts": {
+    "ts:watch": "tsc -w",
+    "ts:build": "tsc",
     "build": "tsc",
-    "dev": "ts-node ./src/server.ts",        
+    "dev": "nodemon ./src/server.ts",        
     "start": "nodemon ./dist/server.js",
     "prod": "npm run build && npm run start"
   },
