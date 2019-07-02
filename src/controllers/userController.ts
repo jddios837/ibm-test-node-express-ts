@@ -9,15 +9,11 @@ const Log = mongoose.model('Log', LogSchema);
 
 export class UserController{
 
-	public addNewUser (req: Request, res: Response) {   
-        console.log('Entro AddNewUSer ', req.body);
+	public addNewUser (req: Request, res: Response) {  
                      
         let newUser = new User(req.body);
     
         newUser.save((err, user) => {
-            console.log('Save ', err);
-            console.log('Save user ', user);
-            
             
             if(err){
                 let logInfo = new Log({
