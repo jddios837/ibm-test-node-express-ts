@@ -17,7 +17,7 @@ class App {
     public userRoute: UserRoutes = new UserRoutes();
     public logRoute: LogRoutes = new LogRoutes();
     
-    public mongoUrl: string = 'mongodb://localhost/ibmTest';
+    public mongoUrl: string = process.env.MONGODB_URI || 'mongodb://localhost/ibmTest';
 
     constructor() {
         this.app = express();

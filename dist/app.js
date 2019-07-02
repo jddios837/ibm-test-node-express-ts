@@ -14,7 +14,7 @@ class App {
         this.authRoute = new authRoutes_1.AuthRoutes();
         this.userRoute = new userRoutes_1.UserRoutes();
         this.logRoute = new logRoutes_1.LogRoutes();
-        this.mongoUrl = 'mongodb://localhost/ibmTest';
+        this.mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/ibmTest';
         this.app = express();
         this.config();
         // this.mainRoute.routes(this.app);         
