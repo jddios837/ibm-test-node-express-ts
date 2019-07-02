@@ -1,5 +1,6 @@
 {
   "name": "apis-project",
+  "engines" : { "node" : "10.13" },
   "version": "1.0.0",
   "description": "api project test",
   "main": "index.js",
