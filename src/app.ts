@@ -17,6 +17,7 @@ class App {
     public userRoute: UserRoutes = new UserRoutes();
     public logRoute: LogRoutes = new LogRoutes();
     
+    
     public mongoUrl: string = process.env.MONGODB_URI || 'mongodb://localhost/ibmTest';
 
     constructor() {
